@@ -4085,80 +4085,3470 @@ You have completed Chapter 2.
 </div>
 </section>
 <!-- ===================================== -->
-<!-- CHAPTER 3 LOCKED -->
+<!-- CHAPTER 3 -->
 <!-- ===================================== -->
 
-<section style="padding:80px 8%;">
-
-<div style="
-max-width:900px;
-margin:auto;
-background:rgba(255,255,255,.06);
-backdrop-filter:blur(15px);
-border:1px solid rgba(255,255,255,.1);
-border-radius:25px;
-padding:50px;
-text-align:center;
-box-shadow:0 0 30px rgba(0,212,255,.2);
-">
-
-<div style="font-size:80px;margin-bottom:20px;">
-🔒
+<div style="margin:70px 0 35px;text-align:center;">
+<h1 style="color:#00d4ff;font-size:42px;">📘 Chapter 3</h1>
+<h2 style="color:white;">Sequence Data Types</h2>
+<p style="color:#9cb3cf;margin-top:10px;">
+Learn Lists, Tuples and Dictionaries with Easy Examples.
+</p>
 </div>
 
-<h1 style="color:#00d4ff;font-size:42px;margin-bottom:15px;">
-Chapter 3 is Locked
-</h1>
+<!-- ========================= -->
+<!-- Sequence Data Types -->
+<!-- ========================= -->
 
-<p style="
-font-size:20px;
-color:#d6e3f5;
-line-height:1.8;
-max-width:700px;
-margin:auto;
-">
+<div class="item">
+<div class="title">
+📚 Sequence Data Types
+<span>+</span>
+</div>
 
-This chapter will be unlocked after you complete the practice of
-<strong>Chapter 2: Operators, Expressions and Python Statements.</strong>
+<div class="content">
 
-Keep practicing the concepts, solve the exercises, and strengthen your understanding.
-Once you are confident with Chapter 2, you will be ready to unlock the next chapter.
+<h4>What are Sequence Data Types?</h4>
+
+<p>
+Sequence Data Types are used to store multiple values in a single variable.
+Every element has its own position called <b>Index</b>.
+Python mainly provides <b>List</b>, <b>Tuple</b> and <b>String</b> as sequence data types.
+</p>
+
+<h4>Main Features</h4>
+
+<ul>
+<li>Stores multiple values.</li>
+<li>Supports Indexing.</li>
+<li>Supports Slicing.</li>
+<li>Supports Iteration.</li>
+<li>Can store different data types.</li>
+</ul>
+
+<code>
+numbers=[10,20,30,40]
+
+print(numbers)
+</code>
+
+<h4>Output</h4>
+
+<code>
+[10,20,30,40]
+</code>
+
+<div class="tip">
+💡 Exam Tip:<br>
+Sequence means an ordered collection of data.
+</div>
+
+</div>
+</div>
+
+<!-- ========================= -->
+<!-- Lists -->
+<!-- ========================= -->
+
+<div class="item">
+<div class="title">
+📋 Lists
+<span>+</span>
+</div>
+
+<div class="content">
+
+<h4>What is List?</h4>
+
+<p>
+A List is a collection of items enclosed inside square brackets <b>[ ]</b>.
+It is the most commonly used sequence data type in Python.
+</p>
+
+<code>
+student=["Rahul","Aman","Riya"]
+
+print(student)
+</code>
+
+<h4>Output</h4>
+
+<code>
+['Rahul','Aman','Riya']
+</code>
+
+<div class="tip">
+⭐ Remember:<br>
+List → Square Brackets [ ]
+</div>
+
+</div>
+</div>
+
+<!-- ========================= -->
+<!-- Properties -->
+<!-- ========================= -->
+
+<div class="item">
+<div class="title">
+⭐ Main Properties of Python Lists
+<span>+</span>
+</div>
+
+<div class="content">
+
+<h4>Properties</h4>
+
+<ul>
+
+<li>Ordered Collection</li>
+
+<li>Mutable (Can be Changed)</li>
+
+<li>Allows Duplicate Values</li>
+
+<li>Supports Indexing</li>
+
+<li>Supports Slicing</li>
+
+<li>Can Store Mixed Data Types</li>
+
+<li>Dynamic Size</li>
+
+</ul>
+
+<table style="width:100%;margin-top:20px;border-collapse:collapse;text-align:center;">
+
+<tr style="background:#10385a;">
+<th style="padding:10px;">Property</th>
+<th>Supported</th>
+</tr>
+
+<tr>
+<td style="padding:10px;">Duplicates</td>
+<td>✅ Yes</td>
+</tr>
+
+<tr>
+<td style="padding:10px;">Mutable</td>
+<td>✅ Yes</td>
+</tr>
+
+<tr>
+<td style="padding:10px;">Ordered</td>
+<td>✅ Yes</td>
+</tr>
+
+<tr>
+<td style="padding:10px;">Indexing</td>
+<td>✅ Yes</td>
+</tr>
+
+</table>
+
+<div class="tip">
+💡 Memory Trick:<br>
+Lists are <b>Ordered + Mutable + Indexed</b>.
+</div>
+
+</div>
+</div>
+
+<!-- ========================= -->
+<!-- Creating Lists -->
+<!-- ========================= -->
+
+<div class="item">
+<div class="title">
+🛠 Creation of List Objects
+<span>+</span>
+</div>
+
+<div class="content">
+
+<h4>Method 1</h4>
+
+<code>
+fruits=["Apple","Mango","Banana"]
+
+print(fruits)
+</code>
+
+<h4>Method 2</h4>
+
+<code>
+marks=list((70,80,90))
+
+print(marks)
+</code>
+
+<h4>Method 3</h4>
+
+<code>
+empty=[]
+
+print(empty)
+</code>
+
+<h4>Output</h4>
+
+<code>
+['Apple','Mango','Banana']
+
+[70,80,90]
+
+[]
+</code>
+
+<div class="tip">
+⭐ Empty List is created using <b>[]</b>.
+</div>
+
+</div>
+</div>
+
+<!-- ========================= -->
+<!-- Accessing Elements -->
+<!-- ========================= -->
+
+<div class="item">
+<div class="title">
+📌 Accessing Elements from List
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p>
+Each element of a list has an index number.
+Index always starts from <b>0</b>.
+</p>
+
+<code>
+colors=["Red","Green","Blue","Yellow"]
+
+print(colors[0])
+
+print(colors[1])
+
+print(colors[2])
+
+print(colors[3])
+</code>
+
+<h4>Output</h4>
+
+<code>
+Red
+
+Green
+
+Blue
+
+Yellow
+</code>
+
+<h4>Index Position</h4>
+
+<table style="width:100%;text-align:center;border-collapse:collapse;margin-top:20px;">
+
+<tr style="background:#10385a;">
+<th>Red</th>
+<th>Green</th>
+<th>Blue</th>
+<th>Yellow</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+</tr>
+
+</table>
+
+<div class="tip">
+💡 Exam Tip:<br>
+First element always starts from Index <b>0</b>.
+</div>
+
+</div>
+</div>
+<!-- ========================= -->
+<!-- Adding Elements -->
+<!-- ========================= -->
+
+<div class="item">
+
+<div class="title">
+➕ Adding Elements to a List
+<span>+</span>
+</div>
+
+<div class="content">
+
+<h4>Introduction</h4>
+
+<p>
+Python provides different methods to add new elements into a list.
+The most commonly used methods are <b>append()</b>, <b>insert()</b> and <b>extend()</b>.
+</p>
+
+<h4>Using append()</h4>
+
+<code>
+numbers=[10,20,30]
+
+numbers.append(40)
+
+print(numbers)
+</code>
+
+<h4>Output</h4>
+
+<code>
+[10,20,30,40]
+</code>
+
+<h4>Using insert()</h4>
+
+<code>
+numbers=[10,20,30]
+
+numbers.insert(1,15)
+
+print(numbers)
+</code>
+
+<h4>Output</h4>
+
+<code>
+[10,15,20,30]
+</code>
+
+<h4>Using extend()</h4>
+
+<code>
+numbers=[10,20]
+
+numbers.extend([30,40,50])
+
+print(numbers)
+</code>
+
+<h4>Output</h4>
+
+<code>
+[10,20,30,40,50]
+</code>
+
+<div class="tip">
+
+⭐ append() → Adds one element<br>
+⭐ insert() → Adds element at a specific position<br>
+⭐ extend() → Adds multiple elements
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- Removing Elements -->
+<!-- ========================= -->
+
+<div class="item">
+
+<div class="title">
+❌ Removing Elements from a List
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p>
+Elements can be removed from a list using different methods.
+</p>
+
+<h4>remove()</h4>
+
+<code>
+fruits=["Apple","Banana","Mango"]
+
+fruits.remove("Banana")
+
+print(fruits)
+</code>
+
+<h4>Output</h4>
+
+<code>
+['Apple','Mango']
+</code>
+
+<h4>pop()</h4>
+
+<code>
+numbers=[10,20,30,40]
+
+numbers.pop()
+
+print(numbers)
+</code>
+
+<h4>Output</h4>
+
+<code>
+[10,20,30]
+</code>
+
+<h4>clear()</h4>
+
+<code>
+numbers=[10,20,30]
+
+numbers.clear()
+
+print(numbers)
+</code>
+
+<h4>Output</h4>
+
+<code>
+[]
+</code>
+
+<h4>del Statement</h4>
+
+<code>
+numbers=[10,20,30,40]
+
+del numbers[1]
+
+print(numbers)
+</code>
+
+<h4>Output</h4>
+
+<code>
+[10,30,40]
+</code>
+
+<div class="tip">
+
+💡 Exam Tip
+
+remove() removes value.<br>
+
+pop() removes index (default last).<br>
+
+clear() removes all elements.<br>
+
+del deletes any element or entire list.
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- Ordering Elements -->
+<!-- ========================= -->
+
+<div class="item">
+
+<div class="title">
+🔃 Ordering Elements of List
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p>
+Python provides methods to sort list elements in ascending or descending order.
+</p>
+
+<h4>Ascending Order</h4>
+
+<code>
+numbers=[40,10,30,20]
+
+numbers.sort()
+
+print(numbers)
+</code>
+
+<h4>Output</h4>
+
+<code>
+[10,20,30,40]
+</code>
+
+<h4>Descending Order</h4>
+
+<code>
+numbers=[40,10,30,20]
+
+numbers.sort(reverse=True)
+
+print(numbers)
+</code>
+
+<h4>Output</h4>
+
+<code>
+[40,30,20,10]
+</code>
+
+<h4>Using sorted()</h4>
+
+<code>
+numbers=[5,2,9,1]
+
+print(sorted(numbers))
+</code>
+
+<h4>Output</h4>
+
+<code>
+[1,2,5,9]
+</code>
+
+<div class="tip">
+
+⭐ sort() changes the original list.<br>
+
+⭐ sorted() creates a new sorted list.
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- Reverse Access -->
+<!-- ========================= -->
+
+<div class="item">
+
+<div class="title">
+🔁 Accessing Individual Elements in Reversed Order
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p>
+Negative indexing is used to access elements from the end of the list.
+</p>
+
+<code>
+colors=["Red","Green","Blue","Yellow"]
+
+print(colors[-1])
+
+print(colors[-2])
+
+print(colors[-3])
+
+print(colors[-4])
+</code>
+
+<h4>Output</h4>
+
+<code>
+Yellow
+
+Blue
+
+Green
+
+Red
+</code>
+
+<table style="width:100%;margin-top:20px;border-collapse:collapse;text-align:center;">
+
+<tr style="background:#10385a;">
+<th>Red</th>
+<th>Green</th>
+<th>Blue</th>
+<th>Yellow</th>
+</tr>
+
+<tr>
+<td>-4</td>
+<td>-3</td>
+<td>-2</td>
+<td>-1</td>
+</tr>
+
+</table>
+
+<div class="tip">
+
+💡 Exam Tip
+
+Negative indexing always starts from <b>-1</b>.
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- Aliasing -->
+<!-- ========================= -->
+
+<div class="item">
+
+<div class="title">
+👥 Aliasing and Cloning of List Objects
+<span>+</span>
+</div>
+
+<div class="content">
+
+<h4>Aliasing</h4>
+
+<p>
+Aliasing means two variables refer to the same list object.
+Changes made through one variable are reflected in the other.
+</p>
+
+<code>
+list1=[10,20,30]
+
+list2=list1
+
+list2.append(40)
+
+print(list1)
+
+print(list2)
+</code>
+
+<h4>Output</h4>
+
+<code>
+[10,20,30,40]
+
+[10,20,30,40]
+</code>
+
+<h4>Cloning</h4>
+
+<p>
+Cloning creates a separate copy of the original list.
+Changes made to one list do not affect the other.
+</p>
+
+<code>
+list1=[10,20,30]
+
+list2=list1.copy()
+
+list2.append(40)
+
+print(list1)
+
+print(list2)
+</code>
+
+<h4>Output</h4>
+
+<code>
+[10,20,30]
+
+[10,20,30,40]
+</code>
+
+<table style="width:100%;margin-top:20px;border-collapse:collapse;text-align:center;">
+
+<tr style="background:#10385a;">
+<th>Aliasing</th>
+<th>Cloning</th>
+</tr>
+
+<tr>
+<td>Same Memory</td>
+<td>Different Memory</td>
+</tr>
+
+<tr>
+<td>Changes Affect Both</td>
+<td>Changes Affect Only Copy</td>
+</tr>
+
+</table>
+
+<div class="tip">
+
+⭐ Memory Trick
+
+Aliasing = Same Object 👥
+
+Cloning = New Copy 📄
+
+</div>
+
+</div>
+
+</div>
+<!-- ========================= -->
+<!-- Mathematical Operators -->
+<!-- ========================= -->
+
+<div class="item">
+
+<div class="title">
+🧮 Using Mathematical Operators for List Objects
+<span>+</span>
+</div>
+
+<div class="content">
+
+<h4>Introduction</h4>
+
+<p>
+Python allows mathematical operators like <b>+</b> and <b>*</b> to work with list objects.
+These operators are mainly used for concatenation and repetition.
+</p>
+
+<h4>List Concatenation (+)</h4>
+
+<code>
+list1=[10,20,30]
+
+list2=[40,50,60]
+
+print(list1+list2)
+</code>
+
+<h4>Output</h4>
+
+<code>
+[10,20,30,40,50,60]
+</code>
+
+<h4>List Repetition (*)</h4>
+
+<code>
+numbers=[1,2,3]
+
+print(numbers*3)
+</code>
+
+<h4>Output</h4>
+
+<code>
+[1,2,3,1,2,3,1,2,3]
+</code>
+
+<h4>Length of List</h4>
+
+<code>
+numbers=[10,20,30,40]
+
+print(len(numbers))
+</code>
+
+<h4>Output</h4>
+
+<code>
+4
+</code>
+
+<div class="tip">
+
+⭐ + joins two lists.<br>
+
+⭐ * repeats list elements.<br>
+
+⭐ len() returns total elements.
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- Comparing Lists -->
+<!-- ========================= -->
+
+<div class="item">
+
+<div class="title">
+⚖ Comparing List Objects
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p>
+Two lists can be compared using comparison operators.
+Comparison is performed element by element.
+</p>
+
+<code>
+list1=[10,20,30]
+
+list2=[10,20,30]
+
+print(list1==list2)
+
+print(list1!=list2)
+</code>
+
+<h4>Output</h4>
+
+<code>
+True
+
+False
+</code>
+
+<h4>Another Example</h4>
+
+<code>
+a=[1,2]
+
+b=[2,3]
+
+print(a<b)
+
+print(a>b)
+</code>
+
+<h4>Output</h4>
+
+<code>
+True
+
+False
+</code>
+
+<div class="tip">
+
+💡 Exam Tip
+
+Comparison checks both values and order of elements.
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- Membership Operator -->
+<!-- ========================= -->
+
+<div class="item">
+
+<div class="title">
+✅ Membership Operator for List Objects
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p>
+Membership operators are used to check whether an element exists inside a list.
+</p>
+
+<h4>Operators</h4>
+
+<ul>
+
+<li>in</li>
+
+<li>not in</li>
+
+</ul>
+
+<code>
+colors=["Red","Green","Blue"]
+
+print("Green" in colors)
+
+print("Black" in colors)
+
+print("Black" not in colors)
+</code>
+
+<h4>Output</h4>
+
+<code>
+True
+
+False
+
+True
+</code>
+
+<div class="tip">
+
+⭐ in → Present
+
+⭐ not in → Not Present
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- Nested Lists -->
+<!-- ========================= -->
+
+<div class="item">
+
+<div class="title">
+📂 Nested Lists
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p>
+A Nested List is a list that contains one or more lists as its elements.
+</p>
+
+<code>
+student=[
+["Rahul",90],
+["Aman",85],
+["Riya",95]
+]
+
+print(student)
+</code>
+
+<h4>Output</h4>
+
+<code>
+[['Rahul',90],['Aman',85],['Riya',95]]
+</code>
+
+<h4>Accessing Nested Elements</h4>
+
+<code>
+print(student[0])
+
+print(student[0][0])
+
+print(student[1][1])
+</code>
+
+<h4>Output</h4>
+
+<code>
+['Rahul',90]
+
+Rahul
+
+85
+</code>
+
+<div class="tip">
+
+💡 Exam Trick
+
+Outer Index → Select List
+
+Inner Index → Select Element
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- Comprehension -->
+<!-- ========================= -->
+
+<div class="item">
+
+<div class="title">
+🧠 Comprehension
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p>
+Comprehension is a short and powerful way to create collections like lists, tuples and dictionaries.
+It makes code smaller and easier to read.
+</p>
+
+<h4>General Syntax</h4>
+
+<code>
+collection=[expression for item in iterable]
+</code>
+
+<h4>Advantages</h4>
+
+<ul>
+
+<li>Short Code</li>
+
+<li>Readable</li>
+
+<li>Fast</li>
+
+<li>Easy to Understand</li>
+
+</ul>
+
+<div class="tip">
+
+⭐ Comprehension = One-line Collection Creation.
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- List Comprehension -->
+<!-- ========================= -->
+
+<div class="item">
+
+<div class="title">
+📋 List Comprehension
+<span>+</span>
+</div>
+
+<div class="content">
+
+<h4>What is List Comprehension?</h4>
+
+<p>
+List Comprehension is used to create a new list using a single line of code.
+</p>
+
+<h4>Example 1</h4>
+
+<code>
+square=[x*x for x in range(1,6)]
+
+print(square)
+</code>
+
+<h4>Output</h4>
+
+<code>
+[1,4,9,16,25]
+</code>
+
+<h4>Example 2</h4>
+
+<code>
+even=[x for x in range(1,21) if x%2==0]
+
+print(even)
+</code>
+
+<h4>Output</h4>
+
+<code>
+[2,4,6,8,10,12,14,16,18,20]
+</code>
+
+<h4>Example 3</h4>
+
+<code>
+names=["rahul","aman","riya"]
+
+upper=[name.upper() for name in names]
+
+print(upper)
+</code>
+
+<h4>Output</h4>
+
+<code>
+['RAHUL','AMAN','RIYA']
+</code>
+
+<div class="tip">
+
+💡 Memory Trick
+
+Expression + for Loop + Optional if Condition
+
+</div>
+
+</div>
+
+</div>
+<!-- ========================= -->
+<!-- Slicing -->
+<!-- ========================= -->
+
+<div class="item">
+
+<div class="title">
+✂️ Slicing
+<span>+</span>
+</div>
+
+<div class="content">
+
+<h4>What is Slicing?</h4>
+
+<p>
+Slicing is used to access a group of elements from a sequence such as a List, Tuple or String.
+The syntax uses the colon (<b>:</b>) operator.
+</p>
+
+<h4>Syntax</h4>
+
+<code>
+sequence[start:stop:step]
+</code>
+
+<h4>Example 1</h4>
+
+<code>
+numbers=[10,20,30,40,50,60]
+
+print(numbers[1:5])
+</code>
+
+<h4>Output</h4>
+
+<code>
+[20,30,40,50]
+</code>
+
+<h4>Example 2</h4>
+
+<code>
+print(numbers[:4])
+</code>
+
+<h4>Output</h4>
+
+<code>
+[10,20,30,40]
+</code>
+
+<h4>Example 3</h4>
+
+<code>
+print(numbers[2:])
+</code>
+
+<h4>Output</h4>
+
+<code>
+[30,40,50,60]
+</code>
+
+<h4>Example 4</h4>
+
+<code>
+print(numbers[::-1])
+</code>
+
+<h4>Output</h4>
+
+<code>
+[60,50,40,30,20,10]
+</code>
+
+<div class="tip">
+
+💡 Exam Tip<br>
+Start Index is Included.<br>
+Stop Index is Excluded.
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- Indexing -->
+<!-- ========================= -->
+
+<div class="item">
+
+<div class="title">
+📍 Indexing
+<span>+</span>
+</div>
+
+<div class="content">
+
+<h4>What is Indexing?</h4>
+
+<p>
+Indexing means accessing an individual element using its position.
+Python supports both positive and negative indexing.
+</p>
+
+<code>
+colors=["Red","Green","Blue","Yellow"]
+
+print(colors[0])
+
+print(colors[-1])
+</code>
+
+<h4>Output</h4>
+
+<code>
+Red
+
+Yellow
+</code>
+
+<table style="width:100%;text-align:center;border-collapse:collapse;margin-top:20px;">
+
+<tr style="background:#10385a;">
+<th>Element</th>
+<th>Positive Index</th>
+<th>Negative Index</th>
+</tr>
+
+<tr>
+
+<td>Red</td>
+
+<td>0</td>
+
+<td>-4</td>
+
+</tr>
+
+<tr>
+
+<td>Green</td>
+
+<td>1</td>
+
+<td>-3</td>
+
+</tr>
+
+<tr>
+
+<td>Blue</td>
+
+<td>2</td>
+
+<td>-2</td>
+
+</tr>
+
+<tr>
+
+<td>Yellow</td>
+
+<td>3</td>
+
+<td>-1</td>
+
+</tr>
+
+</table>
+
+<div class="tip">
+
+⭐ Positive Index starts from 0.<br>
+
+⭐ Negative Index starts from -1.
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- Maximum -->
+<!-- ========================= -->
+
+<div class="item">
+
+<div class="title">
+🔼 Finding the Maximum Element
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p>
+The <b>max()</b> function returns the largest element from a list.
+</p>
+
+<code>
+numbers=[15,42,10,67,30]
+
+print(max(numbers))
+</code>
+
+<h4>Output</h4>
+
+<code>
+67
+</code>
+
+<h4>Manual Method</h4>
+
+<code>
+numbers=[15,42,10,67,30]
+
+maximum=numbers[0]
+
+for i in numbers:
+    if i>maximum:
+        maximum=i
+
+print(maximum)
+</code>
+
+<h4>Output</h4>
+
+<code>
+67
+</code>
+
+<div class="tip">
+
+💡 max() returns the largest value.
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- Minimum -->
+<!-- ========================= -->
+
+<div class="item">
+
+<div class="title">
+🔽 Finding the Minimum Element
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p>
+The <b>min()</b> function returns the smallest value from a list.
+</p>
+
+<code>
+numbers=[15,42,10,67,30]
+
+print(min(numbers))
+</code>
+
+<h4>Output</h4>
+
+<code>
+10
+</code>
+
+<h4>Manual Method</h4>
+
+<code>
+numbers=[15,42,10,67,30]
+
+minimum=numbers[0]
+
+for i in numbers:
+    if i<minimum:
+        minimum=i
+
+print(minimum)
+</code>
+
+<h4>Output</h4>
+
+<code>
+10
+</code>
+
+<div class="tip">
+
+⭐ min() returns the smallest value.
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- Mean -->
+<!-- ========================= -->
+
+<div class="item">
+
+<div class="title">
+📊 Finding the Mean (Average)
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p>
+Mean is calculated by dividing the sum of all elements by the total number of elements.
+</p>
+
+<h4>Formula</h4>
+
+<code>
+Mean = Sum of Elements / Number of Elements
+</code>
+
+<h4>Example</h4>
+
+<code>
+numbers=[10,20,30,40,50]
+
+mean=sum(numbers)/len(numbers)
+
+print(mean)
+</code>
+
+<h4>Output</h4>
+
+<code>
+30.0
+</code>
+
+<h4>Without sum()</h4>
+
+<code>
+numbers=[10,20,30,40,50]
+
+total=0
+
+for i in numbers:
+    total=total+i
+
+mean=total/len(numbers)
+
+print(mean)
+</code>
+
+<h4>Output</h4>
+
+<code>
+30.0
+</code>
+
+<div class="tip">
+
+💡 Mean = Total Sum ÷ Total Elements
+
+</div>
+
+</div>
+
+</div>
+<!-- ========================= -->
+<!-- Tuple -->
+<!-- ========================= -->
+
+<div class="item">
+
+<div class="title">
+📦 Tuple
+<span>+</span>
+</div>
+
+<div class="content">
+
+<h4>What is a Tuple?</h4>
+
+<p>
+A <b>Tuple</b> is an ordered collection of elements enclosed in
+<b>parentheses ( )</b>. It can store different types of data like
+integers, strings, floats and Boolean values.
+Unlike Lists, Tuples are <b>immutable</b>, which means their elements
+cannot be changed after creation.
+</p>
+
+<h4>Syntax</h4>
+
+<code>
+tuple_name=(value1,value2,value3)
+</code>
+
+<h4>Example 1</h4>
+
+<code>
+student=("Rahul",18,89.5)
+
+print(student)
+</code>
+
+<h4>Output</h4>
+
+<code>
+('Rahul',18,89.5)
+</code>
+
+<h4>Example 2</h4>
+
+<code>
+numbers=(10,20,30,40)
+
+print(numbers)
+</code>
+
+<h4>Output</h4>
+
+<code>
+(10,20,30,40)
+</code>
+
+<h4>Accessing Elements</h4>
+
+<code>
+colors=("Red","Green","Blue")
+
+print(colors[0])
+
+print(colors[2])
+</code>
+
+<h4>Output</h4>
+
+<code>
+Red
+
+Blue
+</code>
+
+<div class="tip">
+
+💡 <b>Remember</b><br><br>
+
+Tuple → Parentheses <b>()</b><br>
+
+List → Square Brackets <b>[]</b>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- Tuple Properties -->
+<!-- ========================= -->
+
+<div class="item">
+
+<div class="title">
+⭐ The Main Properties of Python Tuple
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p>
+Python Tuples have several important characteristics that make them
+different from Lists.
+</p>
+
+<table style="width:100%;border-collapse:collapse;text-align:center;margin-top:20px;">
+
+<tr style="background:#10385a;">
+
+<th style="padding:10px;">Property</th>
+
+<th>Supported</th>
+
+</tr>
+
+<tr>
+
+<td style="padding:10px;">Ordered</td>
+
+<td>✅ Yes</td>
+
+</tr>
+
+<tr>
+
+<td style="padding:10px;">Indexed</td>
+
+<td>✅ Yes</td>
+
+</tr>
+
+<tr>
+
+<td style="padding:10px;">Allows Duplicates</td>
+
+<td>✅ Yes</td>
+
+</tr>
+
+<tr>
+
+<td style="padding:10px;">Immutable</td>
+
+<td>❌ Cannot Change</td>
+
+</tr>
+
+<tr>
+
+<td style="padding:10px;">Heterogeneous Data</td>
+
+<td>✅ Yes</td>
+
+</tr>
+
+</table>
+
+<h4>Example</h4>
+
+<code>
+data=(10,"Python",True,10)
+
+print(data)
+</code>
+
+<h4>Output</h4>
+
+<code>
+(10,'Python',True,10)
+</code>
+
+<div class="tip">
+
+⭐ <b>Memory Trick</b><br><br>
+
+Tuple is:<br>
+
+✔ Ordered<br>
+
+✔ Indexed<br>
+
+✔ Immutable<br>
+
+✔ Duplicate Values Allowed
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- Advantages -->
+<!-- ========================= -->
+
+<div class="item">
+
+<div class="title">
+🚀 Advantages of Tuples
+<span>+</span>
+</div>
+
+<div class="content">
+
+<h4>Why Use Tuples?</h4>
+
+<ul>
+
+<li>Faster than Lists.</li>
+
+<li>Consumes less memory.</li>
+
+<li>Provides better data security because it is immutable.</li>
+
+<li>Can be used as Dictionary Keys.</li>
+
+<li>Useful for storing fixed data.</li>
+
+<li>Supports Indexing and Slicing.</li>
+
+<li>Easy to Iterate using loops.</li>
+
+</ul>
+
+<h4>Example</h4>
+
+<code>
+days=("Mon","Tue","Wed","Thu","Fri")
+
+for day in days:
+
+    print(day)
+</code>
+
+<h4>Output</h4>
+
+<code>
+Mon
+
+Tue
+
+Wed
+
+Thu
+
+Fri
+</code>
+
+<div class="tip">
+
+💡 <b>O Level Exam Point</b><br><br>
+
+Use a <b>Tuple</b> whenever the data should not be modified after creation.
+
+</div>
+
+<div class="tip">
+
+⭐ <b>Interview Question</b><br><br>
+
+Q. Why is Tuple faster than List?<br><br>
+
+<b>Answer:</b> Because Tuple is immutable, Python performs fewer operations,
+making it faster and more memory efficient.
+
+</div>
+
+</div>
+
+</div>
+<!-- ========================= -->
+<!-- Tuple Packing & Unpacking -->
+<!-- ========================= -->
+
+<div class="item">
+
+<div class="title">
+📦 Tuple Packing and Unpacking
+<span>+</span>
+</div>
+
+<div class="content">
+
+<h4>Tuple Packing</h4>
+
+<p>
+Tuple Packing means storing multiple values into a single tuple.
+Python automatically packs the values into one tuple object.
+</p>
+
+<code>
+student="Rahul",18,92.5
+
+print(student)
+
+print(type(student))
+</code>
+
+<h4>Output</h4>
+
+<code>
+('Rahul',18,92.5)
+
+&lt;class 'tuple'&gt;
+</code>
+
+<h4>Tuple Unpacking</h4>
+
+<p>
+Tuple Unpacking means assigning tuple elements into separate variables.
+The number of variables must be equal to the number of tuple elements.
+</p>
+
+<code>
+student=("Rahul",18,92.5)
+
+name,age,marks=student
+
+print(name)
+
+print(age)
+
+print(marks)
+</code>
+
+<h4>Output</h4>
+
+<code>
+Rahul
+
+18
+
+92.5
+</code>
+
+<div class="tip">
+
+💡 <b>Exam Tip</b><br><br>
+
+Packing → Many Values ➜ One Tuple<br>
+
+Unpacking → One Tuple ➜ Many Variables
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- Difference -->
+<!-- ========================= -->
+
+<div class="item">
+
+<div class="title">
+⚖️ Difference Between List and Tuple
+<span>+</span>
+</div>
+
+<div class="content">
+
+<table style="width:100%;border-collapse:collapse;text-align:center;margin-top:20px;">
+
+<tr style="background:#10385a;">
+
+<th style="padding:10px;">List</th>
+
+<th>Tuple</th>
+
+</tr>
+
+<tr>
+
+<td>Uses [ ]</td>
+
+<td>Uses ( )</td>
+
+</tr>
+
+<tr>
+
+<td>Mutable</td>
+
+<td>Immutable</td>
+
+</tr>
+
+<tr>
+
+<td>Slower</td>
+
+<td>Faster</td>
+
+</tr>
+
+<tr>
+
+<td>More Memory</td>
+
+<td>Less Memory</td>
+
+</tr>
+
+<tr>
+
+<td>Many Built-in Methods</td>
+
+<td>Very Few Methods</td>
+
+</tr>
+
+<tr>
+
+<td>Best for Frequently Changing Data</td>
+
+<td>Best for Fixed Data</td>
+
+</tr>
+
+</table>
+
+<h4>Example</h4>
+
+<code>
+myList=[10,20,30]
+
+myTuple=(10,20,30)
+
+print(type(myList))
+
+print(type(myTuple))
+</code>
+
+<h4>Output</h4>
+
+<code>
+&lt;class 'list'&gt;
+
+&lt;class 'tuple'&gt;
+</code>
+
+<div class="tip">
+
+⭐ <b>Memory Trick</b><br><br>
+
+List = Flexible ✏️<br>
+
+Tuple = Fixed 🔒
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- Tuple Comprehension -->
+<!-- ========================= -->
+
+<div class="item">
+
+<div class="title">
+🧠 Tuple Comprehension
+<span>+</span>
+</div>
+
+<div class="content">
+
+<h4>What is Tuple Comprehension?</h4>
+
+<p>
+Unlike List Comprehension, Python does not directly create a Tuple using
+comprehension. Writing values inside parentheses creates a
+<b>Generator Object</b>. To create a tuple, convert it using the
+<b>tuple()</b> function.
+</p>
+
+<h4>Syntax</h4>
+
+<code>
+tuple(expression for variable in iterable)
+</code>
+
+<h4>Example</h4>
+
+<code>
+numbers=tuple(x*x for x in range(1,6))
+
+print(numbers)
+</code>
+
+<h4>Output</h4>
+
+<code>
+(1,4,9,16,25)
+</code>
+
+<h4>Another Example</h4>
+
+<code>
+even=tuple(x for x in range(2,11,2))
+
+print(even)
+</code>
+
+<h4>Output</h4>
+
+<code>
+(2,4,6,8,10)
+</code>
+
+<div class="tip">
+
+💡 <b>Important Note</b><br><br>
+
+Tuple comprehension internally creates a Generator Expression.<br>
+
+Use <b>tuple()</b> to convert it into a tuple.
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- Quick Revision -->
+<!-- ========================= -->
+
+<div class="item">
+
+<div class="title">
+📝 Tuple Quick Revision
+<span>+</span>
+</div>
+
+<div class="content">
+
+<h4>Important Points</h4>
+
+<ul>
+
+<li>Tuple is an ordered collection.</li>
+
+<li>Tuple is immutable.</li>
+
+<li>Tuple allows duplicate values.</li>
+
+<li>Tuple supports indexing and slicing.</li>
+
+<li>Tuple Packing stores multiple values into one tuple.</li>
+
+<li>Tuple Unpacking assigns tuple elements to variables.</li>
+
+<li>Tuple uses parentheses ( ).</li>
+
+<li>Use tuple() to convert a generator into a tuple.</li>
+
+</ul>
+
+<div class="tip">
+
+🎯 <b>O Level Exam Tips</b>
+
+<ul>
+
+<li>Remember the difference between List and Tuple.</li>
+
+<li>Know Tuple Packing & Unpacking syntax.</li>
+
+<li>Practice indexing and slicing questions.</li>
+
+<li>Remember that Tuple is immutable.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+<!-- ========================= -->
+<!-- Dictionary -->
+<!-- ========================= -->
+
+<div class="item">
+
+<div class="title">
+📖 Dictionary
+<span>+</span>
+</div>
+
+<div class="content">
+
+<h4>What is a Dictionary?</h4>
+
+<p>
+A <b>Dictionary</b> is a collection of data stored as
+<b>key : value</b> pairs.
+Each key must be unique and is used to access its corresponding value.
+Dictionary objects are enclosed within <b>{ }</b> braces.
+</p>
+
+<h4>Syntax</h4>
+
+<code>
+dictionary_name={
+key1:value1,
+key2:value2
+}
+</code>
+
+<h4>Example</h4>
+
+<code>
+student={
+"name":"Rahul",
+"age":18,
+"marks":92
+}
+
+print(student)
+</code>
+
+<h4>Output</h4>
+
+<code>
+{'name':'Rahul','age':18,'marks':92}
+</code>
+
+<div class="tip">
+
+💡 Dictionary stores data in the form of
+<b>Key : Value</b> pairs.
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- Properties -->
+<!-- ========================= -->
+
+<div class="item">
+
+<div class="title">
+⭐ The Main Properties of Python Dictionaries
+<span>+</span>
+</div>
+
+<div class="content">
+
+<table style="width:100%;border-collapse:collapse;text-align:center;">
+
+<tr style="background:#10385a;">
+
+<th>Property</th>
+
+<th>Supported</th>
+
+</tr>
+
+<tr>
+
+<td>Key-Value Pair</td>
+
+<td>✅ Yes</td>
+
+</tr>
+
+<tr>
+
+<td>Mutable</td>
+
+<td>✅ Yes</td>
+
+</tr>
+
+<tr>
+
+<td>Duplicate Keys</td>
+
+<td>❌ No</td>
+
+</tr>
+
+<tr>
+
+<td>Duplicate Values</td>
+
+<td>✅ Yes</td>
+
+</tr>
+
+<tr>
+
+<td>Indexed by Key</td>
+
+<td>✅ Yes</td>
+
+</tr>
+
+<tr>
+
+<td>Heterogeneous Data</td>
+
+<td>✅ Yes</td>
+
+</tr>
+
+</table>
+
+<h4>Example</h4>
+
+<code>
+employee={
+"id":101,
+"name":"Aman",
+"salary":25000
+}
+
+print(employee)
+</code>
+
+<h4>Output</h4>
+
+<code>
+{'id':101,'name':'Aman','salary':25000}
+</code>
+
+<div class="tip">
+
+⭐ Memory Trick
+
+Dictionary =
+Key ➜ Value
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- Creating Dictionary -->
+<!-- ========================= -->
+
+<div class="item">
+
+<div class="title">
+🛠 Creating Dictionary
+<span>+</span>
+</div>
+
+<div class="content">
+
+<h4>Method 1</h4>
+
+<code>
+student={
+"name":"Riya",
+"age":20,
+"course":"Python"
+}
+
+print(student)
+</code>
+
+<h4>Output</h4>
+
+<code>
+{'name':'Riya','age':20,'course':'Python'}
+</code>
+
+<h4>Method 2 : dict()</h4>
+
+<code>
+student=dict(
+name="Aman",
+age=21,
+marks=89
+)
+
+print(student)
+</code>
+
+<h4>Output</h4>
+
+<code>
+{'name':'Aman','age':21,'marks':89}
+</code>
+
+<h4>Empty Dictionary</h4>
+
+<code>
+data={}
+
+print(data)
+</code>
+
+<h4>Output</h4>
+
+<code>
+{}
+</code>
+
+<div class="tip">
+
+💡 Empty Dictionary is created using
+<b>{ }</b>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- Updating Dictionary -->
+<!-- ========================= -->
+
+<div class="item">
+
+<div class="title">
+✏️ Updating Elements in a Dictionary
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p>
+
+Values of existing keys can be modified and
+new key-value pairs can also be added.
 
 </p>
 
-<div style="margin-top:35px;">
+<h4>Modify Existing Value</h4>
 
-<button style="
-padding:16px 40px;
-font-size:18px;
-font-weight:600;
-border:none;
-border-radius:50px;
-background:#00d4ff;
-color:#000;
-cursor:not-allowed;
-opacity:.7;
-">
+<code>
+student={
+"name":"Rahul",
+"marks":80
+}
 
-🔒 Locked
+student["marks"]=95
 
-</button>
+print(student)
+</code>
+
+<h4>Output</h4>
+
+<code>
+{'name':'Rahul','marks':95}
+</code>
+
+<h4>Add New Element</h4>
+
+<code>
+student["city"]="Delhi"
+
+print(student)
+</code>
+
+<h4>Output</h4>
+
+<code>
+{'name':'Rahul','marks':95,'city':'Delhi'}
+</code>
+
+<div class="tip">
+
+⭐ Existing Key ➜ Value Updated
+
+⭐ New Key ➜ New Element Added
 
 </div>
 
-<p style="
-margin-top:25px;
-color:#8fa9c7;
-font-size:16px;
-">
+</div>
 
-Complete your practice first, then return to continue your learning journey.
+</div>
 
+<!-- ========================= -->
+<!-- Dictionary Methods -->
+<!-- ========================= -->
+
+<div class="item">
+
+<div class="title">
+🧰 Useful Dictionary Methods
+<span>+</span>
+</div>
+
+<div class="content">
+
+<table style="width:100%;border-collapse:collapse;text-align:center;">
+
+<tr style="background:#10385a;">
+
+<th>Method</th>
+
+<th>Purpose</th>
+
+</tr>
+
+<tr>
+
+<td>keys()</td>
+
+<td>Returns all keys</td>
+
+</tr>
+
+<tr>
+
+<td>values()</td>
+
+<td>Returns all values</td>
+
+</tr>
+
+<tr>
+
+<td>items()</td>
+
+<td>Returns key-value pairs</td>
+
+</tr>
+
+<tr>
+
+<td>get()</td>
+
+<td>Returns value of a key</td>
+
+</tr>
+
+<tr>
+
+<td>update()</td>
+
+<td>Updates dictionary</td>
+
+</tr>
+
+<tr>
+
+<td>clear()</td>
+
+<td>Removes all items</td>
+
+</tr>
+
+</table>
+
+<h4>Example</h4>
+
+<code>
+student={
+"name":"Rahul",
+"marks":90
+}
+
+print(student.keys())
+
+print(student.values())
+
+print(student.items())
+</code>
+
+<h4>Output</h4>
+
+<code>
+dict_keys(['name','marks'])
+
+dict_values(['Rahul',90])
+
+dict_items([('name','Rahul'),
+('marks',90)])
+</code>
+
+<div class="tip">
+
+💡 O Level Exam Tip
+
+Remember the functions:
+<b>keys(), values(), items(), get()</b>
+
+These are frequently asked in exams.
+
+</div>
+
+</div>
+
+</div>
+<!-- ========================= -->
+<!-- Iterating Dictionary -->
+<!-- ========================= -->
+
+<div class="item">
+
+<div class="title">
+🔄 Iterating over a Dictionary
+<span>+</span>
+</div>
+
+<div class="content">
+
+<h4>What is Iteration?</h4>
+
+<p>
+Iteration means accessing every key and value of a dictionary one by one using a loop.
+The <b>for</b> loop is commonly used for this purpose.
 </p>
 
+<h4>Example 1 : Iterating Keys</h4>
+
+<code>
+student={
+"name":"Rahul",
+"age":18,
+"marks":92
+}
+
+for key in student:
+    print(key)
+</code>
+
+<h4>Output</h4>
+
+<code>
+name
+age
+marks
+</code>
+
+<h4>Example 2 : Iterating Values</h4>
+
+<code>
+for value in student.values():
+    print(value)
+</code>
+
+<h4>Output</h4>
+
+<code>
+Rahul
+18
+92
+</code>
+
+<h4>Example 3 : Iterating Keys and Values</h4>
+
+<code>
+for key,value in student.items():
+    print(key,"=",value)
+</code>
+
+<h4>Output</h4>
+
+<code>
+name = Rahul
+age = 18
+marks = 92
+</code>
+
+<div class="tip">
+
+💡 <b>Exam Tip</b><br>
+
+items() returns both Key and Value together.
+
 </div>
 
-</section>
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- Delete Dictionary -->
+<!-- ========================= -->
+
+<div class="item">
+
+<div class="title">
+❌ Deleting Elements in a Dictionary
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p>
+Dictionary elements can be removed using <b>pop()</b>, <b>popitem()</b>, <b>del</b> and <b>clear()</b>.
+</p>
+
+<h4>Using pop()</h4>
+
+<code>
+student={
+"name":"Rahul",
+"age":18,
+"marks":92
+}
+
+student.pop("age")
+
+print(student)
+</code>
+
+<h4>Output</h4>
+
+<code>
+{'name':'Rahul','marks':92}
+</code>
+
+<h4>Using del</h4>
+
+<code>
+del student["marks"]
+
+print(student)
+</code>
+
+<h4>Output</h4>
+
+<code>
+{'name':'Rahul'}
+</code>
+
+<h4>Using clear()</h4>
+
+<code>
+student.clear()
+
+print(student)
+</code>
+
+<h4>Output</h4>
+
+<code>
+{}
+</code>
+
+<div class="tip">
+
+⭐ pop() removes one key.<br>
+
+⭐ clear() removes all elements.<br>
+
+⭐ del deletes a specific key.
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- Sorting Dictionary -->
+<!-- ========================= -->
+
+<div class="item">
+
+<div class="title">
+🔃 Sorting the Dictionary
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p>
+Dictionary itself is not sorted automatically.
+Use the <b>sorted()</b> function to display keys in sorted order.
+</p>
+
+<code>
+student={
+"c":30,
+"a":10,
+"b":20
+}
+
+print(sorted(student))
+</code>
+
+<h4>Output</h4>
+
+<code>
+['a','b','c']
+</code>
+
+<h4>Sorting with Items</h4>
+
+<code>
+for key,value in sorted(student.items()):
+    print(key,value)
+</code>
+
+<h4>Output</h4>
+
+<code>
+a 10
+b 20
+c 30
+</code>
+
+<div class="tip">
+
+💡 sorted(dictionary) sorts only the keys.
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- Dictionary Comprehension -->
+<!-- ========================= -->
+
+<div class="item">
+
+<div class="title">
+🧠 Python Dictionary Comprehension
+<span>+</span>
+</div>
+
+<div class="content">
+
+<h4>What is Dictionary Comprehension?</h4>
+
+<p>
+Dictionary Comprehension is a short and efficient way to create dictionaries in a single line.
+</p>
+
+<h4>Syntax</h4>
+
+<code>
+{
+key:value
+for variable in iterable
+}
+</code>
+
+<h4>Example</h4>
+
+<code>
+square={
+x:x*x
+for x in range(1,6)
+}
+
+print(square)
+</code>
+
+<h4>Output</h4>
+
+<code>
+{
+1:1,
+2:4,
+3:9,
+4:16,
+5:25
+}
+</code>
+
+<h4>Conditional Example</h4>
+
+<code>
+even={
+x:x*x
+for x in range(1,11)
+if x%2==0
+}
+
+print(even)
+</code>
+
+<h4>Output</h4>
+
+<code>
+{
+2:4,
+4:16,
+6:36,
+8:64,
+10:100
+}
+</code>
+
+<div class="tip">
+
+⭐ Dictionary Comprehension makes code short and readable.
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- Dictionary Indexing -->
+<!-- ========================= -->
+
+<div class="item">
+
+<div class="title">
+📍 Dictionary Indexing
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p>
+Dictionaries do not use numeric indexes.
+Values are accessed using their corresponding keys.
+</p>
+
+<code>
+student={
+"name":"Rahul",
+"age":18,
+"marks":92
+}
+
+print(student["name"])
+
+print(student["marks"])
+</code>
+
+<h4>Output</h4>
+
+<code>
+Rahul
+
+92
+</code>
+
+<div class="tip">
+
+💡 Dictionary uses <b>Keys</b> instead of numeric indexes.
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- Dictionary Concatenation -->
+<!-- ========================= -->
+
+<div class="item">
+
+<div class="title">
+➕ Dictionary Concatenation
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p>
+Two dictionaries can be combined using the <b>update()</b> method or the <b>|</b> operator (Python 3.9+).
+</p>
+
+<h4>Using update()</h4>
+
+<code>
+dict1={
+"a":1,
+"b":2
+}
+
+dict2={
+"c":3,
+"d":4
+}
+
+dict1.update(dict2)
+
+print(dict1)
+</code>
+
+<h4>Output</h4>
+
+<code>
+{'a':1,'b':2,'c':3,'d':4}
+</code>
+
+<h4>Using | Operator</h4>
+
+<code>
+dict1={"a":1}
+
+dict2={"b":2}
+
+dict3=dict1|dict2
+
+print(dict3)
+</code>
+
+<h4>Output</h4>
+
+<code>
+{'a':1,'b':2}
+</code>
+
+<div class="tip">
+
+⭐ update() modifies the original dictionary.
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- Dictionary Revision -->
+<!-- ========================= -->
+
+<div class="item">
+
+<div class="title">
+📝 Dictionary Quick Revision
+<span>+</span>
+</div>
+
+<div class="content">
+
+<ul>
+
+<li>Dictionary stores data as Key : Value pairs.</li>
+
+<li>Dictionary is Mutable.</li>
+
+<li>Duplicate Keys are NOT allowed.</li>
+
+<li>Duplicate Values are allowed.</li>
+
+<li>Keys are used instead of indexes.</li>
+
+<li>Use items() to access both key and value.</li>
+
+<li>Use update() to merge dictionaries.</li>
+
+<li>Use Dictionary Comprehension to create dictionaries in one line.</li>
+
+</ul>
+
+<div class="tip">
+
+🎯 <b>O Level Exam Tips</b>
+
+<ul>
+
+<li>Remember keys(), values() and items().</li>
+
+<li>Know the difference between List, Tuple and Dictionary.</li>
+
+<li>Practice Dictionary Comprehension.</li>
+
+<li>Remember that Keys must be unique.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+<!-- ========================= -->
+<!-- Tuple Indexing -->
+<!-- ========================= -->
+
+<div class="item">
+
+<div class="title">
+📍 Tuple Indexing
+<span>+</span>
+</div>
+
+<div class="content">
+
+<h4>What is Tuple Indexing?</h4>
+
+<p>
+Tuple elements are accessed using their index position.
+Positive indexing starts from <b>0</b> and negative indexing starts from <b>-1</b>.
+</p>
+
+<code>
+colors=("Red","Green","Blue","Yellow")
+
+print(colors[0])
+
+print(colors[2])
+
+print(colors[-1])
+</code>
+
+<h4>Output</h4>
+
+<code>
+Red
+
+Blue
+
+Yellow
+</code>
+
+<div class="tip">
+
+💡 Tuple supports both Positive and Negative Indexing.
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- Tuple Concatenation -->
+<!-- ========================= -->
+
+<div class="item">
+
+<div class="title">
+➕ Tuple Concatenation
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p>
+Two or more tuples can be joined using the <b>+</b> operator.
+</p>
+
+<code>
+tuple1=(10,20,30)
+
+tuple2=(40,50)
+
+result=tuple1+tuple2
+
+print(result)
+</code>
+
+<h4>Output</h4>
+
+<code>
+(10,20,30,40,50)
+</code>
+
+<h4>Tuple Repetition</h4>
+
+<code>
+numbers=(1,2)
+
+print(numbers*3)
+</code>
+
+<h4>Output</h4>
+
+<code>
+(1,2,1,2,1,2)
+</code>
+
+<div class="tip">
+
+⭐ "+" joins tuples.
+
+⭐ "*" repeats tuple elements.
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- Mutability -->
+<!-- ========================= -->
+
+<div class="item">
+
+<div class="title">
+🔒 Concept of Mutability
+<span>+</span>
+</div>
+
+<div class="content">
+
+<h4>What is Mutability?</h4>
+
+<p>
+Mutability means an object's data can be changed after it has been created.
+If an object allows modification, it is called <b>Mutable</b>.
+Otherwise, it is called <b>Immutable</b>.
+</p>
+
+<table style="width:100%;border-collapse:collapse;text-align:center;">
+
+<tr style="background:#10385a;">
+
+<th>Mutable</th>
+
+<th>Immutable</th>
+
+</tr>
+
+<tr>
+
+<td>List</td>
+
+<td>Tuple</td>
+
+</tr>
+
+<tr>
+
+<td>Dictionary</td>
+
+<td>String</td>
+
+</tr>
+
+<tr>
+
+<td>Set</td>
+
+<td>Integer</td>
+
+</tr>
+
+</table>
+
+<h4>Mutable Example</h4>
+
+<code>
+numbers=[10,20,30]
+
+numbers[1]=50
+
+print(numbers)
+</code>
+
+<h4>Output</h4>
+
+<code>
+[10,50,30]
+</code>
+
+<h4>Immutable Example</h4>
+
+<code>
+data=(10,20,30)
+
+# data[1]=50
+
+print(data)
+</code>
+
+<h4>Output</h4>
+
+<code>
+(10,20,30)
+</code>
+
+<div class="tip">
+
+💡 Lists are Mutable.
+
+💡 Tuples are Immutable.
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- Why Immutability -->
+<!-- ========================= -->
+
+<div class="item">
+
+<div class="title">
+❓ Why Immutability Concept is Required in Python?
+<span>+</span>
+</div>
+
+<div class="content">
+
+<h4>Importance of Immutability</h4>
+
+<ul>
+
+<li>Provides better data security.</li>
+
+<li>Prevents accidental modification.</li>
+
+<li>Improves program reliability.</li>
+
+<li>Consumes less memory.</li>
+
+<li>Improves performance.</li>
+
+<li>Useful for fixed information.</li>
+
+</ul>
+
+<div class="tip">
+
+🎯 O Level Exam Point
+
+Use Tuple whenever data should never change.
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- Linear Search -->
+<!-- ========================= -->
+
+<div class="item">
+
+<div class="title">
+🔍 Linear Search on List / Tuple
+<span>+</span>
+</div>
+
+<div class="content">
+
+<h4>What is Linear Search?</h4>
+
+<p>
+Linear Search checks every element one by one until the required element is found.
+</p>
+
+<h4>Example (List)</h4>
+
+<code>
+numbers=[10,25,40,15,30]
+
+key=15
+
+found=False
+
+for i in numbers:
+
+    if i==key:
+
+        found=True
+
+        break
+
+if found:
+
+    print("Element Found")
+
+else:
+
+    print("Element Not Found")
+</code>
+
+<h4>Output</h4>
+
+<code>
+Element Found
+</code>
+
+<h4>Example (Tuple)</h4>
+
+<code>
+data=(5,8,12,20)
+
+key=12
+
+if key in data:
+
+    print("Found")
+
+else:
+
+    print("Not Found")
+</code>
+
+<h4>Output</h4>
+
+<code>
+Found
+</code>
+
+<div class="tip">
+
+⭐ Linear Search Time Complexity = O(n)
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- Frequency -->
+<!-- ========================= -->
+
+<div class="item">
+
+<div class="title">
+📊 Counting Frequency of Elements using Dictionary
+<span>+</span>
+</div>
+
+<div class="content">
+
+<h4>Program</h4>
+
+<code>
+numbers=[2,3,2,5,3,2,4]
+
+frequency={}
+
+for item in numbers:
+
+    if item in frequency:
+
+        frequency[item]+=1
+
+    else:
+
+        frequency[item]=1
+
+print(frequency)
+</code>
+
+<h4>Output</h4>
+
+<code>
+{2:3,3:2,5:1,4:1}
+</code>
+
+<div class="tip">
+
+💡 Dictionary stores
+
+Element ➜ Frequency
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- Chapter Summary -->
+<!-- ========================= -->
+
+<div class="item">
+
+<div class="title">
+📖 Chapter 3 Quick Revision
+<span>+</span>
+</div>
+
+<div class="content">
+
+<h4>Remember These Points</h4>
+
+<ul>
+
+<li>List uses Square Brackets [ ] and is Mutable.</li>
+
+<li>Tuple uses Parentheses ( ) and is Immutable.</li>
+
+<li>Dictionary stores Key : Value pairs.</li>
+
+<li>List, Tuple and Dictionary support iteration.</li>
+
+<li>List and Tuple support slicing.</li>
+
+<li>Dictionary is accessed using Keys.</li>
+
+<li>Use append(), insert(), remove(), pop() for Lists.</li>
+
+<li>Use update(), keys(), values(), items() for Dictionaries.</li>
+
+<li>Use max(), min(), sum() and len() with sequences.</li>
+
+<li>Use Linear Search to search elements.</li>
+
+<li>Dictionary is useful for counting frequency.</li>
+
+</ul>
+
+<div class="tip">
+
+🎯 <b>Most Important O Level Topics</b>
+
+<ul>
+
+<li>List Methods</li>
+
+<li>Tuple vs List</li>
+
+<li>Dictionary Methods</li>
+
+<li>List Comprehension</li>
+
+<li>Dictionary Comprehension</li>
+
+<li>Slicing & Indexing</li>
+
+<li>Linear Search</li>
+
+<li>Finding Maximum, Minimum & Mean</li>
+
+<li>Frequency Count using Dictionary</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- Practice Questions -->
+<!-- ========================= -->
+
+<div class="item">
+
+<div class="title">
+📝 Practice Questions
+<span>+</span>
+</div>
+
+<div class="content">
+
+<ol>
+
+<li>What is a List? Explain its properties.</li>
+
+<li>Differentiate between List and Tuple.</li>
+
+<li>Explain Tuple Packing and Unpacking.</li>
+
+<li>Write a program to find the maximum element in a list.</li>
+
+<li>Write a program to calculate the mean of list elements.</li>
+
+<li>Explain Dictionary with an example.</li>
+
+<li>How do you update and delete elements in a Dictionary?</li>
+
+<li>Write a program for Linear Search.</li>
+
+<li>Write a program to count the frequency of elements using Dictionary.</li>
+
+<li>Explain Mutability and Immutability with examples.</li>
+
+</ol>
+
+<div class="tip">
+
+🏆 If you can solve all these questions without looking at the notes, you are well prepared for the O Level Python exam.
+
+</div>
+
+</div>
+
+</div>
 <!-- ==========================================
             PRACTICE PROGRAMS
 ========================================== -->
@@ -4842,6 +8232,798 @@ print(list(reversed(lst)))
 </div>
 
 </div>
+<div class="item">
+<div class="title">
+💻 Program 13 : Tuple Concatenation and Repetition
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p><b>Aim:</b> Write a Python program to perform Tuple Concatenation and Tuple Repetition.</p>
+
+<button class="copy-btn" onclick="copyCode('p13')">📋 Copy Code</button>
+
+<h4>Python Code</h4>
+
+<pre><code id="p13">
+tpl = (10, 20, 30, 40)
+print(tpl + tpl)
+print(tpl * 3)
+</code></pre>
+
+<h4>Output</h4>
+
+<pre><code>
+(10, 20, 30, 40, 10, 20, 30, 40)
+(10, 20, 30, 40, 10, 20, 30, 40, 10, 20, 30, 40)
+</code></pre>
+
+</div>
+</div>
+<!-- ========================= -->
+<!-- Program 13 -->
+<!-- ========================= -->
+
+<div class="item">
+<div class="title">
+💻 Program 13 : Tuple Concatenation and Repetition
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p><b>Aim:</b> Write a Python program to perform tuple concatenation and repetition.</p>
+
+<button class="copy-btn" onclick="copyCode('p13')">📋 Copy Code</button>
+
+<h4>Python Code</h4>
+
+<pre><code id="p13">
+tpl = (10, 20, 30, 40)
+print(tpl + tpl)
+print(tpl * 3)
+</code></pre>
+
+<h4>Output</h4>
+
+<pre><code>
+(10, 20, 30, 40, 10, 20, 30, 40)
+(10, 20, 30, 40, 10, 20, 30, 40, 10, 20, 30, 40)
+</code></pre>
+
+</div>
+</div>
+
+<!-- ========================= -->
+<!-- Program 14 -->
+<!-- ========================= -->
+
+<div class="item">
+<div class="title">
+💻 Program 14 : Sorting a List
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p><b>Aim:</b> Write a Python program to sort a list in ascending order.</p>
+
+<button class="copy-btn" onclick="copyCode('p14')">📋 Copy Code</button>
+
+<h4>Python Code</h4>
+
+<pre><code id="p14">
+nums = [70, 50, 60, 1, 20]
+
+print("Original list : ", nums)
+print("Sorted (Ascending order) list : ", sorted(nums))
+</code></pre>
+
+<h4>Output</h4>
+
+<pre><code>
+Original list : [70, 50, 60, 1, 20]
+Sorted (Ascending order) list : [1, 20, 50, 60, 70]
+</code></pre>
+
+</div>
+</div>
+
+<!-- ========================= -->
+<!-- Program 15 -->
+<!-- ========================= -->
+
+<div class="item">
+<div class="title">
+💻 Program 15 : List Aliasing
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p><b>Aim:</b> Write a Python program to demonstrate list aliasing.</p>
+
+<button class="copy-btn" onclick="copyCode('p15')">📋 Copy Code</button>
+
+<h4>Python Code</h4>
+
+<pre><code id="p15">
+x = [10, 20, 'zero', 'one']
+y = x
+
+print("id of x : ", id(x))
+print("id of y : ", id(y))
+</code></pre>
+
+<h4>Output</h4>
+
+<pre><code>
+id of x : 45409664
+id of y : 45409664
+</code></pre>
+
+</div>
+</div>
+
+<!-- ========================= -->
+<!-- Program 16 -->
+<!-- ========================= -->
+
+<div class="item">
+<div class="title">
+💻 Program 16 : Effect of List Aliasing
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p><b>Aim:</b> Write a Python program to show the effect of aliasing.</p>
+
+<button class="copy-btn" onclick="copyCode('p16')">📋 Copy Code</button>
+
+<h4>Python Code</h4>
+
+<pre><code id="p16">
+x = [10, 20, 'zero', 'one']
+y = x
+
+print("id of x : ", id(x))
+print("id of y : ", id(y))
+
+y[0] = 30
+
+print(y)
+print(x)
+</code></pre>
+
+<h4>Output</h4>
+
+<pre><code>
+id of x : 45606272
+id of y : 45606272
+[30, 20, 'zero', 'one']
+[30, 20, 'zero', 'one']
+</code></pre>
+
+</div>
+</div>
+<!-- ========================= -->
+<!-- Program 17 -->
+<!-- ========================= -->
+
+<div class="item">
+<div class="title">
+💻 Program 17 : Comparing Lists (Equality Operators)
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p><b>Aim:</b> Write a Python program to compare two lists using equality operators.</p>
+
+<button class="copy-btn" onclick="copyCode('p17')">📋 Copy Code</button>
+
+<h4>Python Code</h4>
+
+<pre><code id="p17">
+x = [10, 20, 30]
+y = [10, 20, 30]
+z = [20, 30, 10]
+
+print(x == y)
+print(x == z)
+print(x != z)
+</code></pre>
+
+<h4>Output</h4>
+
+<pre><code>
+True
+False
+True
+</code></pre>
+
+</div>
+</div>
+
+<!-- ========================= -->
+<!-- Program 18 -->
+<!-- ========================= -->
+
+<div class="item">
+<div class="title">
+💻 Program 18 : Comparing Lists (Relational Operators)
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p><b>Aim:</b> Write a Python program to compare lists using relational operators.</p>
+
+<button class="copy-btn" onclick="copyCode('p18')">📋 Copy Code</button>
+
+<h4>Python Code</h4>
+
+<pre><code id="p18">
+x = ['a', 'b', 'c']
+y = ['a', 'b', 'c']
+z = ['A', 'B', 'C']
+
+print(x > y)
+print(x >= z)
+print(x < z)
+print(z < x)
+</code></pre>
+
+<h4>Output</h4>
+
+<pre><code>
+False
+True
+False
+True
+</code></pre>
+
+</div>
+</div>
+
+<!-- ========================= -->
+<!-- Program 19 -->
+<!-- ========================= -->
+
+<div class="item">
+<div class="title">
+💻 Program 19 : Membership Operator (in)
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p><b>Aim:</b> Write a Python program to demonstrate the <b>in</b> membership operator.</p>
+
+<button class="copy-btn" onclick="copyCode('p19')">📋 Copy Code</button>
+
+<h4>Python Code</h4>
+
+<pre><code id="p19">
+x = ['a', 'b', 'c']
+
+print('a' in x)
+print('d' in x)
+</code></pre>
+
+<h4>Output</h4>
+
+<pre><code>
+True
+False
+</code></pre>
+
+</div>
+</div>
+
+<!-- ========================= -->
+<!-- Program 20 -->
+<!-- ========================= -->
+
+<div class="item">
+<div class="title">
+💻 Program 20 : Membership Operator (not in)
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p><b>Aim:</b> Write a Python program to demonstrate the <b>not in</b> membership operator.</p>
+
+<button class="copy-btn" onclick="copyCode('p20')">📋 Copy Code</button>
+
+<h4>Python Code</h4>
+
+<pre><code id="p20">
+x = ['a', 'b', 'c']
+
+print('b' not in x)
+print('e' not in x)
+</code></pre>
+
+<h4>Output</h4>
+
+<pre><code>
+False
+True
+</code></pre>
+
+</div>
+</div>
+<!-- ========================= -->
+<!-- Program 21 -->
+<!-- ========================= -->
+
+<div class="item">
+<div class="title">
+💻 Program 21 : clear() Method
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p><b>Aim:</b> Write a Python program to remove all elements from a list using the <b>clear()</b> method.</p>
+
+<button class="copy-btn" onclick="copyCode('p21')">📋 Copy Code</button>
+
+<h4>Python Code</h4>
+
+<pre><code id="p21">
+x = ['a', 'b', 'c']
+
+print(x)
+
+x.clear()
+
+print(x)
+</code></pre>
+
+<h4>Output</h4>
+
+<pre><code>
+['a', 'b', 'c']
+[]
+</code></pre>
+
+</div>
+</div>
+
+<!-- ========================= -->
+<!-- Program 22 -->
+<!-- ========================= -->
+
+<div class="item">
+<div class="title">
+💻 Program 22 : Mutable List
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p><b>Aim:</b> Write a Python program to demonstrate that a List is mutable.</p>
+
+<button class="copy-btn" onclick="copyCode('p22')">📋 Copy Code</button>
+
+<h4>Python Code</h4>
+
+<pre><code id="p22">
+a = [1, 2, 3]
+
+print("Before changing list : ", a)
+print("Address of a is : ", id(a))
+
+a[1] = 100
+
+print("After changing list : ", a)
+print("Address of a is : ", id(a))
+</code></pre>
+
+<h4>Output</h4>
+
+<pre><code>
+Before changing list : [1, 2, 3]
+Address of a is : 18736312
+After changing list : [1, 100, 3]
+Address of a is : 18736312
+</code></pre>
+
+</div>
+</div>
+
+<!-- ========================= -->
+<!-- Program 23 -->
+<!-- ========================= -->
+
+<div class="item">
+<div class="title">
+💻 Program 23 : Nested List
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p><b>Aim:</b> Write a Python program to access elements of a nested list.</p>
+
+<button class="copy-btn" onclick="copyCode('p23')">📋 Copy Code</button>
+
+<h4>Python Code</h4>
+
+<pre><code id="p23">
+a = [10, 20, [30, 40]]
+
+print(a)
+print(a[0])
+print(a[1])
+print(a[2])
+print(a[2][0])
+print(a[2][1])
+</code></pre>
+
+<h4>Output</h4>
+
+<pre><code>
+[10, 20, [30, 40]]
+10
+20
+[30, 40]
+30
+40
+</code></pre>
+
+</div>
+</div>
+
+<!-- ========================= -->
+<!-- Program 24 -->
+<!-- ========================= -->
+
+<div class="item">
+<div class="title">
+💻 Program 24 : Matrix using Nested List
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p><b>Aim:</b> Write a Python program to print elements of a nested list in matrix form.</p>
+
+<button class="copy-btn" onclick="copyCode('p24')">📋 Copy Code</button>
+
+<h4>Python Code</h4>
+
+<pre><code id="p24">
+a = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+print(a)
+
+print("printing elements by row wise")
+
+for i in a:
+    print(i)
+
+print("printing elements by matrix style")
+
+for i in range(len(a)):
+    for j in range(len(a[i])):
+        print(a[i][j], end=" ")
+    print()
+</code></pre>
+
+<h4>Output</h4>
+
+<pre><code>
+[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+printing elements by row wise
+[1, 2, 3]
+[4, 5, 6]
+[7, 8, 9]
+printing elements by matrix style
+1 2 3
+4 5 6
+7 8 9
+</code></pre>
+
+</div>
+</div>
+<!-- ========================= -->
+<!-- Program 25 -->
+<!-- ========================= -->
+
+<div class="item">
+<div class="title">
+💻 Program 25 : List Comprehension
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p><b>Aim:</b> Write a Python program to create a list of squares using List Comprehension.</p>
+
+<button class="copy-btn" onclick="copyCode('p25')">📋 Copy Code</button>
+
+<h4>Python Code</h4>
+
+<pre><code id="p25">
+list = []
+
+for a in range(1, 11):
+    list.append(a ** 2)
+
+print("Output : ", list)
+print(type(list))
+</code></pre>
+
+<h4>Output</h4>
+
+<pre><code>
+Output : [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+&lt;class 'list'&gt;
+</code></pre>
+
+</div>
+</div>
+
+<!-- ========================= -->
+<!-- Program 26 -->
+<!-- ========================= -->
+
+<div class="item">
+<div class="title">
+💻 Program 26 : Creating Different Types of Tuples
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p><b>Aim:</b> Write a Python program to create different types of tuples.</p>
+
+<button class="copy-btn" onclick="copyCode('p26')">📋 Copy Code</button>
+
+<h4>Python Code</h4>
+
+<pre><code id="p26">
+tpl = ()
+print("A blank tuple : ", tpl)
+
+tpl = 100, 200, 300
+print("A tuple set without parenthesis : ", tpl)
+print("type : ", type(tpl))
+
+tpl = (111, 222, 333)
+print("A tuple of numbers : ", tpl)
+
+tpl = (1, 2.2, 3+3j, 'four')
+print("A tuple of mixed elements : ", tpl)
+
+tpl = (33, "33", [3, 31])
+print("A tuple of mixed data types : ", tpl)
+
+tpl = (('xxx', 'yyyy', 'zzz'), ('aaa', 'bbb', 'ccc'))
+print("A tuple of tuples : ", tpl)
+</code></pre>
+
+<h4>Output</h4>
+
+<pre><code>
+A blank tuple : ()
+A tuple set without parenthesis : (100, 200, 300)
+type : &lt;class 'tuple'&gt;
+A tuple of numbers : (111, 222, 333)
+A tuple of mixed elements : (1, 2.2, (3+3j), 'four')
+A tuple of mixed data types : (33, '33', [3, 31])
+A tuple of tuples : (('xxx', 'yyyy', 'zzz'), ('aaa', 'bbb', 'ccc'))
+</code></pre>
+
+</div>
+</div>
+
+<!-- ========================= -->
+<!-- Program 27 -->
+<!-- ========================= -->
+
+<div class="item">
+<div class="title">
+💻 Program 27 : Tuple Declaration
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p><b>Aim:</b> Write a Python program to demonstrate different ways of creating tuples.</p>
+
+<button class="copy-btn" onclick="copyCode('p27')">📋 Copy Code</button>
+
+<h4>Python Code</h4>
+
+<pre><code id="p27">
+tpl = ()
+print(tpl, " ", type(tpl))
+
+tpl = 10
+print(tpl, " ", type(tpl))
+
+tpl = 1, 2, 3, 4
+print(tpl, " ", type(tpl))
+
+tpl = (1, 2, 3, 4)
+print(tpl, " ", type(tpl))
+
+tpl = 100,
+print(tpl, " ", type(tpl))
+
+tpl = (100)
+print(tpl, " ", type(tpl))
+
+tpl = (2,)
+print(tpl, " ", type(tpl))
+</code></pre>
+
+<h4>Output</h4>
+
+<pre><code>
+() &lt;class 'tuple'&gt;
+10 &lt;class 'int'&gt;
+(1, 2, 3, 4) &lt;class 'tuple'&gt;
+(1, 2, 3, 4) &lt;class 'tuple'&gt;
+(100,) &lt;class 'tuple'&gt;
+100 &lt;class 'int'&gt;
+(2,) &lt;class 'tuple'&gt;
+</code></pre>
+
+</div>
+</div>
+<!-- ========================= -->
+<!-- Program 28 -->
+<!-- ========================= -->
+
+<div class="item">
+<div class="title">
+💻 Program 28 : Converting List to Tuple
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p><b>Aim:</b> Write a Python program to convert a list into a tuple and create a tuple using the <b>range()</b> function.</p>
+
+<button class="copy-btn" onclick="copyCode('p28')">📋 Copy Code</button>
+
+<h4>Python Code</h4>
+
+<pre><code id="p28">
+list = [1, 2, 3, 4]
+
+print(list)
+print(type(list))
+
+print("converting list to tuple")
+
+tpl = tuple(list)
+
+print("after convertion")
+
+print(tpl)
+print(type(tpl))
+
+tpl = tuple(range(100, 120, 2))
+
+print(tpl)
+</code></pre>
+
+<h4>Output</h4>
+
+<pre><code>
+[1, 2, 3, 4]
+&lt;class 'list'&gt;
+converting list to tuple
+after convertion
+(1, 2, 3, 4)
+&lt;class 'tuple'&gt;
+(100, 102, 104, 106, 108, 110, 112, 114, 116, 118)
+</code></pre>
+
+</div>
+</div>
+
+<!-- ========================= -->
+<!-- Program 29 -->
+<!-- ========================= -->
+
+<div class="item">
+<div class="title">
+💻 Program 29 : Accessing Tuple Elements
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p><b>Aim:</b> Write a Python program to access tuple elements using indexing and a <b>for</b> loop.</p>
+
+<button class="copy-btn" onclick="copyCode('p29')">📋 Copy Code</button>
+
+<h4>Python Code</h4>
+
+<pre><code id="p29">
+tpl = (10, 20, 30, 40)
+
+print("tpl : ", tpl)
+
+print("tpl[0] : ", tpl[0])
+
+print("tpl[1] : ", tpl[1])
+
+print("tpl[-1] : ", tpl[-1])
+
+print("tpl[(-len(tpl))] : ", tpl[(-len(tpl))])
+
+print("Using for loop printing tuple elements")
+
+for i in tpl:
+    print(i)
+</code></pre>
+
+<h4>Output</h4>
+
+<pre><code>
+tpl : (10, 20, 30, 40)
+tpl[0] : 10
+tpl[1] : 20
+tpl[-1] : 40
+tpl[(-len(tpl))] : 10
+Using for loop printing tuple elements
+10
+20
+30
+40
+</code></pre>
+
+</div>
+</div>
+
+<!-- ========================= -->
+<!-- Program 30 -->
+<!-- ========================= -->
+
+<div class="item">
+<div class="title">
+💻 Program 30 : Tuple Concatenation and Repetition
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p><b>Aim:</b> Write a Python program to concatenate and repeat tuples.</p>
+
+<button class="copy-btn" onclick="copyCode('p30')">📋 Copy Code</button>
+
+<h4>Python Code</h4>
+
+<pre><code id="p30">
+tpl = (10, 20, 30, 40)
+
+print(tpl + tpl)
+
+print(tpl * 3)
+</code></pre>
+
+<h4>Output</h4>
+
+<pre><code>
+(10, 20, 30, 40, 10, 20, 30, 40)
+
+(10, 20, 30, 40, 10, 20, 30, 40, 10, 20, 30, 40)
+</code></pre>
+
+</div>
+</div>
+
 
 </section>
 
@@ -6494,7 +10676,19 @@ function submitTest(testName, formId) {
     }
   }
 
-  alert("Your Score: " + score + " / 25");
+  alert("Your Score: " + score + " / 25");}
+</script>
+<script>
+function copyCode(id){
+const code=document.getElementById(id).innerText;
+navigator.clipboard.writeText(code);
+
+const btn=event.target;
+const old=btn.innerHTML;
+btn.innerHTML="✅ Copied";
+setTimeout(()=>{
+btn.innerHTML=old;
+},1500);
 }
 </script>
 </body>
