@@ -9023,6 +9023,563 @@ print(tpl * 3)
 
 </div>
 </div>
+<!-- ========================= -->
+<!-- Program 31 -->
+<!-- ========================= -->
+
+<div class="item">
+<div class="title">
+💻 Program 31 : Tuple Packing and Unpacking
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p><b>Aim:</b> Write a Python program to demonstrate tuple packing and unpacking.</p>
+
+<button class="copy-btn" onclick="copyCode('p31')">📋 Copy Code</button>
+
+<h4>Python Code</h4>
+
+<pre><code id="p31">
+tpl = (10, 2.2, 'hello', 1+2j, True)
+
+a, b, c, d, e = tpl
+
+print('a = ', a, ' b = ', b, ' c = ', c, ' d = ', d, ' e = ', e)
+</code></pre>
+
+<h4>Output</h4>
+
+<pre><code>
+a = 10  b = 2.2  c = hello  d = (1+2j)  e = True
+</code></pre>
+
+</div>
+</div>
+
+<!-- ========================= -->
+<!-- Program 32 -->
+<!-- ========================= -->
+
+<div class="item">
+<div class="title">
+💻 Program 32 : Tuple Comprehension (Generator)
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p><b>Aim:</b> Write a Python program to demonstrate tuple comprehension using a generator.</p>
+
+<button class="copy-btn" onclick="copyCode('p32')">📋 Copy Code</button>
+
+<h4>Python Code</h4>
+
+<pre><code id="p32">
+tpl = (x*2 for x in range(1, 5))
+
+for x in tpl:
+    print(x)
+
+print(type(tpl))
+</code></pre>
+
+<h4>Output</h4>
+
+<pre><code>
+2
+4
+6
+8
+&lt;class 'generator'&gt;
+</code></pre>
+
+</div>
+</div>
+
+<!-- ========================= -->
+<!-- Program 33 -->
+<!-- ========================= -->
+
+<div class="item">
+<div class="title">
+💻 Program 33 : Creating a Dictionary
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p><b>Aim:</b> Write a Python program to create and display a dictionary.</p>
+
+<button class="copy-btn" onclick="copyCode('p33')">📋 Copy Code</button>
+
+<h4>Python Code</h4>
+
+<pre><code id="p33">
+dct = {}
+
+dct[1] = 'aaa'
+dct[2] = 'bbb'
+dct[3] = 'ccc'
+
+print(dct)
+
+dct['a'] = 'python'
+dct['b'] = 'python'
+dct['c'] = 'python'
+
+print(dct)
+</code></pre>
+
+<h4>Output</h4>
+
+<pre><code>
+{1: 'aaa', 2: 'bbb', 3: 'ccc'}
+
+{1: 'aaa', 2: 'bbb', 3: 'ccc', 'a': 'python', 'b': 'python', 'c': 'python'}
+</code></pre>
+
+</div>
+</div>
+
+<!-- ========================= -->
+<!-- Program 34 -->
+<!-- ========================= -->
+
+<div class="item">
+<div class="title">
+💻 Program 34 : Checking a Key in Dictionary
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p><b>Aim:</b> Write a Python program to check whether a key exists in a dictionary.</p>
+
+<button class="copy-btn" onclick="copyCode('p34')">📋 Copy Code</button>
+
+<h4>Python Code</h4>
+
+<pre><code id="p34">
+d = {
+    'roll_no': '101',
+    'name': 'krishna',
+    'marks': 456
+}
+
+if 'total' in d:
+    print(d['total'])
+else:
+    print("Given key is not available...")
+</code></pre>
+
+<h4>Output</h4>
+
+<pre><code>
+Given key is not available...
+</code></pre>
+
+</div>
+</div>
+<!-- ========================= -->
+<!-- Program 35 -->
+<!-- ========================= -->
+
+<div class="item">
+<div class="title">
+💻 Program 35 : Updating Dictionary Elements
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p><b>Aim:</b> Write a Python program to update values and add new elements to a dictionary.</p>
+
+<button class="copy-btn" onclick="copyCode('p35')">📋 Copy Code</button>
+
+<h4>Python Code</h4>
+
+<pre><code id="p35">
+dct = {'name': 'buddya', 'age': 28}
+
+print("Before upgradation dictionary values")
+print(dct)
+print("reference id value is : ", id(dct))
+
+dct['age'] = 39
+dct['address'] = 'Lumbini, Nepal'
+
+print("After upgradation dictionary values")
+print(dct)
+print("reference id value is : ", id(dct))
+</code></pre>
+
+<h4>Output</h4>
+
+<pre><code>
+Before upgradation dictionary values
+{'name': 'buddya', 'age': 28}
+reference id value is : 46857216
+
+After upgradation dictionary values
+{'name': 'buddya', 'age': 39, 'address': 'Lumbini, Nepal'}
+reference id value is : 46857216
+</code></pre>
+
+</div>
+</div>
+
+<!-- ========================= -->
+<!-- Program 36 -->
+<!-- ========================= -->
+
+<div class="item">
+<div class="title">
+💻 Program 36 : Student Record using Dictionary
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p><b>Aim:</b> Write a Python program to store and display student records using a dictionary.</p>
+
+<button class="copy-btn" onclick="copyCode('p36')">📋 Copy Code</button>
+
+<h4>Python Code</h4>
+
+<pre><code id="p36">
+ns = int(input("Enter number of students : "))
+
+i = 1
+record = {}
+
+while i <= ns:
+    name = input("Enter name of the student : ")
+    pmarks = input("Enter % marks of the student : ")
+    record[name] = pmarks
+    i = i + 1
+
+print("Name of the student \t % of the student")
+
+for x in record:
+    print("\t", x, "\t\t", record[x])
+</code></pre>
+
+<h4>Output</h4>
+
+<pre><code>
+Enter number of students : 2
+Enter name of the student : vaibhav
+Enter % marks of the student : 99
+Enter name of the student : prakash
+Enter % marks of the student : 98
+
+Name of the student      % of the student
+vaibhav                  99
+prakash                  98
+</code></pre>
+
+</div>
+</div>
+
+<!-- ========================= -->
+<!-- Program 37 -->
+<!-- ========================= -->
+
+<div class="item">
+<div class="title">
+💻 Program 37 : Iterating Dictionary Keys
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p><b>Aim:</b> Write a Python program to iterate over dictionary keys.</p>
+
+<button class="copy-btn" onclick="copyCode('p37')">📋 Copy Code</button>
+
+<h4>Python Code</h4>
+
+<pre><code id="p37">
+d = {'a':100, 'b':200, 'c':300, 'd':400}
+
+for key in d.keys():
+    print(key)
+</code></pre>
+
+<h4>Output</h4>
+
+<pre><code>
+a
+b
+c
+d
+</code></pre>
+
+</div>
+</div>
+
+<!-- ========================= -->
+<!-- Program 38 -->
+<!-- ========================= -->
+
+<div class="item">
+<div class="title">
+💻 Program 38 : Iterating Dictionary Values
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p><b>Aim:</b> Write a Python program to iterate over dictionary values.</p>
+
+<button class="copy-btn" onclick="copyCode('p38')">📋 Copy Code</button>
+
+<h4>Python Code</h4>
+
+<pre><code id="p38">
+d = {'a':100, 'b':200, 'c':300, 'd':400}
+
+for key in d.values():
+    print(key)
+</code></pre>
+
+<h4>Output</h4>
+
+<pre><code>
+100
+200
+300
+400
+</code></pre>
+
+</div>
+</div>
+<!-- ========================= -->
+<!-- Program 39 -->
+<!-- ========================= -->
+
+<div class="item">
+<div class="title">
+💻 Program 39 : Deleting Dictionary Elements
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p><b>Aim:</b> Write a Python program to remove elements from a dictionary using different methods.</p>
+
+<button class="copy-btn" onclick="copyCode('p39')">📋 Copy Code</button>
+
+<h4>Python Code</h4>
+
+<pre><code id="p39">
+d = {1:100, 2:200, 3:300, 4:400, 5:500}
+
+print(d)
+
+print("remove a particular item, returns value of the deleted item")
+print(d.pop(4))
+print(d)
+
+print("remove an arbitrary item")
+print(d.popitem())
+print(d)
+
+print("delete a particular item")
+del d[1]
+print(d)
+
+print("remove all items")
+d.clear()
+print(d)
+
+print("delete the dictionary itself")
+del d
+</code></pre>
+
+<h4>Output</h4>
+
+<pre><code>
+{1: 100, 2: 200, 3: 300, 4: 400, 5: 500}
+
+remove a particular item, returns value of the deleted item
+400
+{1: 100, 2: 200, 3: 300, 5: 500}
+
+remove an arbitrary item
+(5, 500)
+{1: 100, 2: 200, 3: 300}
+
+delete a particular item
+{2: 200, 3: 300}
+
+remove all items
+{}
+
+delete the dictionary itself
+</code></pre>
+
+</div>
+</div>
+
+<!-- ========================= -->
+<!-- Program 40 -->
+<!-- ========================= -->
+
+<div class="item">
+<div class="title">
+💻 Program 40 : setdefault() Method
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p><b>Aim:</b> Write a Python program to demonstrate the <b>setdefault()</b> method of a dictionary.</p>
+
+<button class="copy-btn" onclick="copyCode('p40')">📋 Copy Code</button>
+
+<h4>Python Code</h4>
+
+<pre><code id="p40">
+d = {1 : "rama", 2 : "krishna", 3 : "murthy"}
+
+print(d.setdefault(4, "vinay"))
+print(d)
+
+print(d.setdefault(1, "sachin"))
+print(d)
+</code></pre>
+
+<h4>Output</h4>
+
+<pre><code>
+vinay
+{1: 'rama', 2: 'krishna', 3: 'murthy', 4: 'vinay'}
+
+rama
+{1: 'rama', 2: 'krishna', 3: 'murthy', 4: 'vinay'}
+</code></pre>
+
+</div>
+</div>
+
+<!-- ========================= -->
+<!-- Program 41 -->
+<!-- ========================= -->
+
+<div class="item">
+<div class="title">
+💻 Program 41 : Copying a Dictionary
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p><b>Aim:</b> Write a Python program to create a copy of a dictionary.</p>
+
+<button class="copy-btn" onclick="copyCode('p41')">📋 Copy Code</button>
+
+<h4>Python Code</h4>
+
+<pre><code id="p41">
+one = {1: 'one', 2: 'two'}
+
+two = one.copy()
+
+print('Original: ', one, ' id : ', id(one))
+print('New: ', two, ' id : ', id(two))
+</code></pre>
+
+<h4>Output</h4>
+
+<pre><code>
+Original: {1: 'one', 2: 'two'} id : 46922896
+New: {1: 'one', 2: 'two'} id : 47334240
+</code></pre>
+
+</div>
+</div>
+
+<!-- ========================= -->
+<!-- Program 42 -->
+<!-- ========================= -->
+
+<div class="item">
+<div class="title">
+💻 Program 42 : Finding Dictionary Length
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p><b>Aim:</b> Write a Python program to find the length of a dictionary using <b>len()</b>.</p>
+
+<button class="copy-btn" onclick="copyCode('p42')">📋 Copy Code</button>
+
+<h4>Python Code</h4>
+
+<pre><code id="p42">
+dict = {}
+
+print(dict, ' length is ', len(dict))
+
+dict = {1:1, 2:2, 3:3, 4:4}
+
+print(dict, ' length is ', len(dict))
+</code></pre>
+
+<h4>Output</h4>
+
+<pre><code>
+{} length is 0
+
+{1: 1, 2: 2, 3: 3, 4: 4} length is 4
+</code></pre>
+
+</div>
+</div>
+
+<!-- ========================= -->
+<!-- Program 43 -->
+<!-- ========================= -->
+
+<div class="item">
+<div class="title">
+💻 Program 43 : Updating a Dictionary using update()
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p><b>Aim:</b> Write a Python program to update a dictionary using the <b>update()</b> method.</p>
+
+<button class="copy-btn" onclick="copyCode('p43')">📋 Copy Code</button>
+
+<h4>Python Code</h4>
+
+<pre><code id="p43">
+d1 = {1: "100", 2: "300"}
+d2 = {2: "200", 3: "400"}
+
+print("Before update :", d1)
+
+d1.update(d2)
+
+print("After update :", d1)
+</code></pre>
+
+<h4>Output</h4>
+
+<pre><code>
+Before update : {1: '100', 2: '300'}
+
+After update : {1: '100', 2: '200', 3: '400'}
+</code></pre>
+
+</div>
+</div>
 
 
 </section>
