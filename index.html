@@ -9580,7 +9580,428 @@ After update : {1: '100', 2: '200', 3: '400'}
 
 </div>
 </div>
+<!-- ========================= -->
+<!-- Program 44 -->
+<!-- ========================= -->
 
+<div class="item">
+<div class="title">
+💻 Program 44 : Updating Dictionary using update()
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p><b>Aim:</b> Write a Python program to update a dictionary using the <b>update()</b> method.</p>
+
+<button class="copy-btn" onclick="copyCode('p44')">📋 Copy Code</button>
+
+<h4>Python Code</h4>
+
+<pre><code id="p44">
+d1 = {1: "100", 2: "300"}
+
+d2 = {2: "200"}
+
+d1.update(d2)
+print(d1)
+
+d3 = {3: "three"}
+
+d1.update(d3)
+print(d1)
+</code></pre>
+
+<h4>Output</h4>
+
+<pre><code>
+{1: '100', 2: '200'}
+
+{1: '100', 2: '200', 3: 'three'}
+</code></pre>
+
+</div>
+</div>
+
+<!-- ========================= -->
+<!-- Program 45 -->
+<!-- ========================= -->
+
+<div class="item">
+<div class="title">
+💻 Program 45 : Comparing Dictionaries
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p><b>Aim:</b> Write a Python program to compare two dictionaries.</p>
+
+<button class="copy-btn" onclick="copyCode('p45')">📋 Copy Code</button>
+
+<h4>Python Code</h4>
+
+<pre><code id="p45">
+dict1 = {1: "100", 2: "200"}
+dict2 = {1: "200", 3: "300"}
+dict3 = {1: "100", 2: "200"}
+
+print(dict1 == dict2)
+print(dict1 == dict3)
+</code></pre>
+
+<h4>Output</h4>
+
+<pre><code>
+False
+True
+</code></pre>
+
+</div>
+</div>
+
+<!-- ========================= -->
+<!-- Program 46 -->
+<!-- ========================= -->
+
+<div class="item">
+<div class="title">
+💻 Program 46 : Dictionary Comprehension
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p><b>Aim:</b> Write a Python program to create dictionaries using dictionary comprehension.</p>
+
+<button class="copy-btn" onclick="copyCode('p46')">📋 Copy Code</button>
+
+<h4>Python Code</h4>
+
+<pre><code id="p46">
+dict = {x : x*x for x in range(1,10)}
+print('x : x*x : ', dict)
+
+dict = {x : 10*x for x in range(1,10)}
+print('x : 10*x : ', dict)
+
+dict = {x : x**x for x in range(1,10)}
+print('x : x**x : ', dict)
+</code></pre>
+
+<h4>Output</h4>
+
+<pre><code>
+x : x*x : {1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81}
+
+x : 10*x : {1: 10, 2: 20, 3: 30, 4: 40, 5: 50, 6: 60, 7: 70, 8: 80, 9: 90}
+
+x : x**x : {1: 1, 2: 4, 3: 27, 4: 256, 5: 3125, 6: 46656, 7: 823543, 8: 16777216, 9: 387420489}
+</code></pre>
+
+</div>
+</div>
+
+<!-- ========================= -->
+<!-- Program 47 -->
+<!-- ========================= -->
+
+<div class="item">
+<div class="title">
+💻 Program 47 : List Slicing
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p><b>Aim:</b> Write a Python program to demonstrate list slicing.</p>
+
+<button class="copy-btn" onclick="copyCode('p47')">📋 Copy Code</button>
+
+<h4>Python Code</h4>
+
+<pre><code id="p47">
+num = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+
+print(num[4:70])
+print(num[-11:-100])
+print(num[-2:10])
+</code></pre>
+
+<h4>Output</h4>
+
+<pre><code>
+[50, 60, 70, 80, 90, 100]
+
+[]
+
+[90, 100]
+</code></pre>
+
+</div>
+</div>
+
+<!-- ========================= -->
+<!-- Program 48 -->
+<!-- ========================= -->
+
+<div class="item">
+<div class="title">
+💻 Program 48 : Tuple Indexing
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p><b>Aim:</b> Write a Python program to access tuple elements using indexing.</p>
+
+<button class="copy-btn" onclick="copyCode('p48')">📋 Copy Code</button>
+
+<h4>Python Code</h4>
+
+<pre><code id="p48">
+my_tuple = ('p', 'y', 't', 'h', 'o', 'n')
+
+print("my_tuple : ", my_tuple)
+
+print(my_tuple[0], my_tuple[1], my_tuple[2],
+      my_tuple[3], my_tuple[4], my_tuple[5])
+
+NestedTuple = ("Python", [8, 10, 6], (1, 2, 3))
+
+print("NestedTuple : ", NestedTuple)
+
+print("NestedTuple[0][3] : ", NestedTuple[0][3])
+
+print("NestedTuple[1][1] : ", NestedTuple[1][1])
+</code></pre>
+
+<h4>Output</h4>
+
+<pre><code>
+my_tuple : ('p', 'y', 't', 'h', 'o', 'n')
+
+p y t h o n
+
+NestedTuple : ('Python', [8, 10, 6], (1, 2, 3))
+
+NestedTuple[0][3] : h
+
+NestedTuple[1][1] : 10
+</code></pre>
+
+</div>
+</div>
+
+<!-- ========================= -->
+<!-- Program 49 -->
+<!-- ========================= -->
+
+<div class="item">
+<div class="title">
+💻 Program 49 : Accessing Tuple Elements
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p><b>Aim:</b> Write a Python program to access tuple elements.</p>
+
+<button class="copy-btn" onclick="copyCode('p49')">📋 Copy Code</button>
+
+<h4>Python Code</h4>
+
+<pre><code id="p49">
+my_tuple = ('p', 'y', 't', 'h', 'o', 'n')
+
+print(my_tuple)
+
+print(my_tuple[0])
+print(my_tuple[1])
+print(my_tuple[2])
+print(my_tuple[3])
+print(my_tuple[4])
+print(my_tuple[5])
+</code></pre>
+
+<h4>Output</h4>
+
+<pre><code>
+('p', 'y', 't', 'h', 'o', 'n')
+
+p
+y
+t
+h
+o
+n
+</code></pre>
+
+</div>
+</div>
+<!-- ========================= -->
+<!-- Program 50 -->
+<!-- ========================= -->
+
+<div class="item">
+<div class="title">
+💻 Program 50 : Desktop AI Assistant (Python)
+<span>+</span>
+</div>
+
+<div class="content">
+
+<p><b>Aim:</b> Write a Python program to create a simple Desktop AI Assistant that can open Windows applications.</p>
+
+<button class="copy-btn" onclick="copyCode('p50')">📋 Copy Code</button>
+
+<h4>Python Code</h4>
+
+<pre><code id="p50">
+import os
+
+print("="*45)
+print("      PYTHON DESKTOP AI ASSISTANT")
+print("="*45)
+print("Commands:")
+print("Open Notepad")
+print("Open Calculator")
+print("Open Paint")
+print("Open Word")
+print("Open Excel")
+print("Open PowerPoint")
+print("Open Explorer")
+print("Open CMD")
+print("Open Control Panel")
+print("Exit")
+print("="*45)
+print("Hello")
+print("How are you")
+print("I am fine")
+print("What is your name")
+print("Who made you")
+print("What can you do")
+print("Good Morning")
+print("Good Afternoon")
+print("Good Evening")
+print("Good Night")
+print("Thank You")
+print("Bye")
+
+while True:
+
+    command = input("\nYou : ").lower()
+
+    if command == "open notepad":
+        os.system("notepad")
+
+    elif command == "open calculator":
+        os.system("calc")
+
+    elif command == "open paint":
+        os.system("mspaint")
+
+    elif command == "open explorer":
+        os.system("explorer")
+
+    elif command == "open cmd":
+        os.system("start cmd")
+
+    elif command == "open control panel":
+        os.system("control")
+
+    elif command == "open word":
+        os.system("start winword")
+
+    elif command == "open excel":
+        os.system("start excel")
+
+    elif command == "open powerpoint":
+        os.system("start powerpnt")
+
+    elif command == "exit":
+        print("AI : Goodbye!")
+        break
+
+    else:
+        print("AI : Sorry! Command not recognized.")
+
+    if command == "hello" or command == "hi":
+        print("AI : Hello! Nice to meet you.")
+
+    elif command == "how are you":
+        print("AI : I am fine. Thanks for asking. How are you?")
+
+    elif command == "i am fine":
+        print("AI : That's great to hear!")
+
+    elif command == "what is your name":
+        print("AI : My name is Python Desktop AI.")
+
+    elif command == "who made you":
+        print("AI : I was created by a Python programmer.")
+
+    elif command == "what can you do":
+        print("AI : I can chat with you and open Windows applications.")
+
+    elif command == "thank you":
+        print("AI : You're welcome!")
+
+    elif command == "good morning":
+        print("AI : Good Morning! Have a wonderful day.")
+
+    elif command == "good afternoon":
+        print("AI : Good Afternoon!")
+
+    elif command == "good evening":
+        print("AI : Good Evening!")
+
+    elif command == "good night":
+        print("AI : Good Night! Sweet dreams.")
+
+    elif command == "bye":
+        print("AI : Goodbye! Have a nice day.")
+        break
+</code></pre>
+
+<h4>Output</h4>
+
+<pre><code>
+=============================================
+      PYTHON DESKTOP AI ASSISTANT
+=============================================
+
+Commands:
+Open Notepad
+Open Calculator
+Open Paint
+Open Word
+Open Excel
+Open PowerPoint
+Open Explorer
+Open CMD
+Open Control Panel
+Exit
+
+You : open notepad
+
+(Notepad Opens)
+
+You : open calculator
+
+(Calculator Opens)
+
+You : open word
+
+(Microsoft Word Opens)
+
+You : exit
+
+AI : Goodbye!
+</code></pre>
+
+</div>
+</div>
 
 </section>
 
